@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Multi Step Form</title>
+</head>
+<body>
+    <main class="container">
+        <div class="side-bar">
+            <div class="sidebar-menu menu-one">
+                <div>
+                    <button id="bone" class="active">1</button>
+                </div>
+                <div>
+                    <p>STEP 1</p>
+                    <h6>YOUR INFO</h6>
+                </div>
+            </div>
+            <div class="sidebar-menu menu-two">
+                <div>
+                    <button id="btwo">2</button>
+                </div>
+                <div>
+                    <p>STEP 2</p>
+                    <h6>SELECT PLAN</h6>
+                </div>
+            </div>
+            <div class="sidebar-menu menu-three">
+                <div>
+                    <button id="bthree">3</button>
+                </div>
+                <div>
+                    <p>STEP 3</p>
+                    <h6>ADD-ONS</h6>
+                </div>
+            </div>
+            <div class="sidebar-menu menu-four">
+                <div>
+                    <button id="bfour">4</button>
+                </div>
+                <div>
+                    <p>STEP 4</p>
+                    <h6>SUMMARY</h6>
+                </div>
+            </div>
+        </div>
+        <div class="main-bar" id="one">
+            <h1>Personal Info</h1>
+            <p>Please provide your name, email address and phone number.</p>
+            <form class="form" novalidate>
+                <div>
+                    <label for="name">Name</label>
+                    <span id="name-error"></span>
+                </div>
+                <input type="text" id="name" placeholder="e.g. Stephen King">
+                <div>
+                    <label for="email">Email Address</label>
+                    <span id="email-error"></span>
+                </div>
+                <input type="email" id="email" placeholder="e.g. stephenking@lorem.com">
+                <div>
+                    <label for="phoneno">Phone Number</label>
+                    <span id="phone-error"></span>
+                </div>
+                <input type="tel" id="phoneno" placeholder="e.g. +1234 567 890">
+                <button id="button" class="right">Next Step</button>
+            </form>
+        </div>
+        <div class="steptwo-box">
+            <h1>Select your plan</h1>
+            <p>You have the option of monthly or yearly billing</p>
+            <div class="yearlist" style="display: none">
+                <div class="plan">
+                    <img src="Assets/icon-arcade.svg" alt="icon-arcade">
+                    <h5>Arcade</h5>
+                    <p>$90/yr</p>
+                    <h6>2 months free</h6>
+                </div>
+                <div class="plan">
+                    <img src="Assets/icon-advanced.svg" alt="icon-arcade">
+                    <h5>Advanced</h5>
+                    <p>$120/yr</p>
+                    <h6>2 months free</h6>
+                </div>
+                <div class="plan">
+                    <img src="Assets/icon-pro.svg" alt="icon-arcade">
+                    <h5>Pro</h5>
+                    <p>$150/yr</p>
+                    <h6>2 months free</h6>
+                </div>
+            </div>
+            <div class="yearlist">
+                <div class="plan">
+                    <img src="Assets/icon-arcade.svg" alt="icon-arcade">
+                    <h5>Arcade</h5>
+                    <p>$9/mo</p>
+                </div>
+                <div class="plan">
+                    <img src="Assets/icon-advanced.svg" alt="icon-arcade">
+                    <h5>Advanced</h5>
+                    <p>$12/mo</p>
+                </div>
+                <div class="plan">
+                    <img src="Assets/icon-pro.svg" alt="icon-arcade">
+                    <h5>Pro</h5>
+                    <p>$15/mo</p>
+                </div>
+            </div>
+            <div class="plantype">
+                <p>Monthly</p>
+                <input type="checkbox" id="switch">
+                <label for="switch" class="toggle"></label>
+                <p>Yearly</p>
+            </div>
+            <div class="foot">
+                <a href="#one">Go Back</a>
+                <button id="stwobutton" class="right">Next Step</button>
+            </div>
+        </div>
+        <div class="stepthree-box">
+            <h1>Pick add-ons</h1>
+            <p>Add-ons help enhance your gaming experience.</p>
+            <div class="addons" style="display: none">
+                <input type="checkbox" checked>
+                <div>
+                    <h6>Online service</h6>
+                    <p>Access to multiplayer game</p>
+                </div>
+                <small>+$1/mo</small>
+            </div>
+            <div class="addons" style="display: none">
+                <input type="checkbox" checked>
+                <div>
+                    <h6>Larger storage</h6>
+                    <p>Extra 1TB of cloud save</p>
+                </div>
+                <small>+$2/mo</small>
+            </div>
+            <div class="addons" style="display: none">
+                <input type="checkbox">
+                <div>
+                    <h6>Customizable profit</h6>
+                    <p>Custom theme on your profile</p>
+                </div>
+                <small>+$2/mo</small>
+            </div>
+            <div class="addons">
+                <input type="checkbox" checked>
+                <div>
+                    <h6>Online service</h6>
+                    <p>Access to multiplayer game</p>
+                </div>
+                <small>+$10/yr</small>
+            </div>
+            <div class="addons">
+                <input type="checkbox" checked>
+                <div>
+                    <h6>Larger storage</h6>
+                    <p>Extra 1TB of cloud save</p>
+                </div>
+                <small>+$20/yr</small>
+            </div>
+            <div class="addons">
+                <input type="checkbox">
+                <div>
+                    <h6>Customizable profit</h6>
+                    <p>Custom theme on your profile</p>
+                </div>
+                <small>+$20/yr</small>
+            </div>
+            <div class="foot" style="margin-top: 50px">
+                <a href="#goback">Go Back</a>
+                <button id="button" class="right">Next Step</button>
+            </div>
+        </div>
+        <div class="stepfour-box">
+            <h1>Finishing up</h1>
+            <p>Double-check everything looks OK before confirming</p>
+            <div class="summary" style="display: none">
+                <div>
+                    <div>
+                        <h6>Arcade (Monthly)</h6>
+                        <a href="#change">Change</a>
+                    </div>
+                    <b>$9/mo</b>
+                </div>
+                <hr>
+                <div>
+                    <p>Online service</p>
+                    <small>+$1/mo</small>
+                </div>
+                <div>
+                    <p>Larger storage</p>
+                    <small>+$2/mo</small>
+                </div>
+            </div>
+            <div class="total" style="display: none">
+                <p>Total (per month)</p>
+                <b>$12/mo</b>
+            </div>
+            <div class="summary">
+                <div>
+                    <div>
+                        <h6>Arcade (Yearly)</h6>
+                        <a href="#change">Change</a>
+                    </div>
+                    <b>$90/yr</b>
+                </div>
+                <hr>
+                <div>
+                    <p>Online service</p>
+                    <small>+$10/yr</small>
+                </div>
+                <div>
+                    <p>Larger storage</p>
+                    <small>+$20/yr</small>
+                </div>
+            </div>
+            <div class="total">
+                <p>Total (per month)</p>
+                <b>$120/yr</b>
+            </div>
+            <div class="stepfour-foot">
+                <a href="#goback">Go Back</a>
+                <button id="button" class="right">Confirm</button>
+            </div>
+        </div>
+        <div class="sfinal">
+            <img src="Assets/icon-thank-you.svg">
+            <h1>Thank you!</h1>
+            <p>Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.</p>
+        </div>
+    </main>
+</body>
+</html>
+<script src="script.js"></script>
