@@ -3,7 +3,7 @@ const menuTwo = document.querySelector('.menu-two')
 const menuThree = document.querySelector('.menu-three');
 const menuFour = document.querySelector('.menu-four')
 const mainBar = document.querySelector('.main-bar');
-const stepTwoBox = document.querySelector('.steptwo-box')
+const stepTwoBox = document.querySelector('.stm-box')
 const stepThreeBox = document.querySelector('.stepthree-box');
 const stepFourBox = document.querySelector('.stepfour-box');
 const form = document.querySelector('.form')
@@ -16,7 +16,6 @@ const phoneError = document.querySelector('#phone-error')
 // const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const emailPattern =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 const phonePattern = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
-const stwoButton = document.querySelector('#stwobutton')
 const bOne = document.querySelector('#bone')
 const bTwo = document.querySelector('#btwo')
 const bThree = document.querySelector('#bthree')
@@ -25,6 +24,7 @@ const bFour = document.querySelector('#bfour')
 menuOne.addEventListener('click', function() {
     mainBar.style.display = 'block'
     stepTwoBox.style.display = "none"
+    styBox.style.display = 'none'
     stepThreeBox.style.display = "none"
     stepFourBox.style.display = "none"
     bOne.classList.add('active')
@@ -86,6 +86,7 @@ form.addEventListener('input', function() {
 menuTwo.addEventListener('click', function() {
     mainBar.style.display = "none"
     stepTwoBox.style.display = "block"
+    styBox.style.display = 'none'
     stepThreeBox.style.display = "none"
     stepFourBox.style.display = "none"
     bTwo.classList.add('active')
@@ -113,3 +114,37 @@ menuFour.addEventListener('click', function() {
     bThree.classList.remove('active')
     bOne.classList.remove('active')
 })
+
+const gboBtn = document.querySelector('#gbo-btn')
+const stwoButton = document.querySelector('#stwobutton')
+const yearList = document.querySelector('.yearlist')
+const monthList = document.querySelector('.monthlist')
+const styBox = document.querySelector('.sty-box');
+const gbyBtn = document.querySelector('#gby-btn');
+const styBtn = document.querySelector('#sty-btn');
+
+
+gboBtn.addEventListener('click', function() {
+    mainBar.style.display = 'block'
+    stepTwoBox.style.display = 'none'
+    bOne.classList.add('active')
+    bTwo.classList.remove('active')
+})
+
+stwoButton.addEventListener('click', function() {
+    styBox.style.display = 'block'
+    stepTwoBox.style.display = 'none'
+})
+
+gbyBtn.addEventListener('click', function() {
+    styBox.style.display = 'none'
+    stepTwoBox.style.display = 'block'
+})
+
+styBtn.addEventListener('click', function() {
+    stepThreeBox.style.display = "block"
+    styBox.style.display = 'none'
+    bTwo.classList.remove('active')
+    bThree.classList.add('active')
+})
+

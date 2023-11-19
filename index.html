@@ -47,7 +47,7 @@
                 </div>
             </div>
         </div>
-        <div class="main-bar" id="one">
+        <div class="main-bar">
             <h1>Personal Info</h1>
             <p>Please provide your name, email address and phone number.</p>
             <form class="form" novalidate>
@@ -69,10 +69,41 @@
                 <button id="button" class="right">Next Step</button>
             </form>
         </div>
-        <div class="steptwo-box">
+        <div class="stm-box">
             <h1>Select your plan</h1>
             <p>You have the option of monthly or yearly billing</p>
-            <div class="yearlist" style="display: none">
+            <div class="monthlist">
+                <div class="plan">
+                    <img src="Assets/icon-arcade.svg" alt="icon-arcade">
+                    <h5>Arcade</h5>
+                    <p>$9/mo</p>
+                </div>
+                <div class="plan">
+                    <img src="Assets/icon-advanced.svg" alt="icon-arcade">
+                    <h5>Advanced</h5>
+                    <p>$12/mo</p>
+                </div>
+                <div class="plan">
+                    <img src="Assets/icon-pro.svg" alt="icon-arcade">
+                    <h5>Pro</h5>
+                    <p>$15/mo</p>
+                </div>
+            </div>
+            <div class="plantype">
+                <p style="color: hsl(213, 96%, 18%); font-weight: 700;">Monthly</p>
+                <input type="checkbox" id="switch">
+                <label for="switch" class="toggle"></label>
+                <p style="color: hsla(231, 11%, 63%, 0.8)">Yearly</p>
+            </div>
+            <div class="foot">
+                <button id="gbo-btn">Go Back</button>
+                <button id="stwobutton">Next Step</button>
+            </div>
+        </div>
+        <div class="sty-box">
+            <h1>Select your plan</h1>
+            <p>You have the option of monthly or yearly billing</p>
+            <div class="yearlist">
                 <div class="plan">
                     <img src="Assets/icon-arcade.svg" alt="icon-arcade">
                     <h5>Arcade</h5>
@@ -92,32 +123,15 @@
                     <h6>2 months free</h6>
                 </div>
             </div>
-            <div class="yearlist">
-                <div class="plan">
-                    <img src="Assets/icon-arcade.svg" alt="icon-arcade">
-                    <h5>Arcade</h5>
-                    <p>$9/mo</p>
-                </div>
-                <div class="plan">
-                    <img src="Assets/icon-advanced.svg" alt="icon-arcade">
-                    <h5>Advanced</h5>
-                    <p>$12/mo</p>
-                </div>
-                <div class="plan">
-                    <img src="Assets/icon-pro.svg" alt="icon-arcade">
-                    <h5>Pro</h5>
-                    <p>$15/mo</p>
-                </div>
-            </div>
             <div class="plantype">
-                <p>Monthly</p>
-                <input type="checkbox" id="switch">
+                <p style="color: hsla(231, 11%, 63%, 0.8)">Monthly</p>
+                <input type="checkbox" id="switch" checked>
                 <label for="switch" class="toggle"></label>
-                <p>Yearly</p>
+                <p style="color: hsl(213, 96%, 18%); font-weight: 700;">Yearly</p>
             </div>
             <div class="foot">
-                <a href="#one">Go Back</a>
-                <button id="stwobutton" class="right">Next Step</button>
+                <button id="gby-btn">Go Back</button>
+                <button id="sty-btn">Next Step</button>
             </div>
         </div>
         <div class="stepthree-box">
@@ -171,9 +185,9 @@
                 </div>
                 <small>+$20/yr</small>
             </div>
-            <div class="foot" style="margin-top: 50px">
-                <a href="#goback">Go Back</a>
-                <button id="button" class="right">Next Step</button>
+            <div class="foot">
+                <button id="sthgby-btn">Go Back</button>
+                <button id="sthny-btn">Next Step</button>
             </div>
         </div>
         <div class="stepfour-box">

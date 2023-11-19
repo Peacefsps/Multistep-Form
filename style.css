@@ -12,6 +12,9 @@ body {
     align-items: center;
     justify-content: center;
 }
+button {
+    cursor: pointer;
+}
 .container {
     background-color: hsl(0, 0%, 100%);
     padding: 16px 50px 16px 16px;
@@ -110,18 +113,18 @@ body {
     margin-top: 40px;
     cursor: pointer;
 }
-.steptwo-box {
+.stm-box, .sty-box {
     display: none;
 }
-.steptwo-box > h1 {
+.stm-box > h1, .sty-box > h1 {
     color: hsl(213, 96%, 18%);
     margin-bottom: 6px;
 }
-.steptwo-box > p {
+.stm-box > p, .sty-box > p {
     color: hsl(231, 11%, 63%);
     margin-bottom: 28px;
 }
-.yearlist {
+.monthlist, .yearlist {
     display: flex;
 }
 .plan {
@@ -129,7 +132,11 @@ body {
     border-radius: 6px;
     padding: 20px 28px 12px 12px;
     margin-right: 14px;
-    width: 120px;
+    width: 130px;
+}
+.plan:hover {
+    border: 1px solid hsl(243, 100%, 62%);
+    cursor: pointer;
 }
 .plan > img {
     margin-bottom: 24px;
@@ -191,12 +198,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 48px;
 }
-.foot > a {
+#gbo-btn, #gby-btn, #sthgby-btn {
     color: hsl(231, 11%, 63%);
-    text-decoration: none;
+    border: unset;
+    background-color: unset;
+    font-size: 16px;
 }
-.foot > button {
+#stwobutton, #sty-btn, #sthny-btn {
     background-color: hsl(213, 96%, 18%);
     width: 100px;
     color: white;
