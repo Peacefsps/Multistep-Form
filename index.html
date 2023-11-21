@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Multi Step Form</title>
 </head>
 <body>
@@ -73,7 +74,7 @@
             <h1>Select your plan</h1>
             <p>You have the option of monthly or yearly billing</p>
             <div class="monthlist">
-                <div class="plan">
+                <div class="plan bordered">
                     <img src="Assets/icon-arcade.svg" alt="icon-arcade">
                     <h5>Arcade</h5>
                     <p>$9/mo</p>
@@ -104,7 +105,7 @@
             <h1>Select your plan</h1>
             <p>You have the option of monthly or yearly billing</p>
             <div class="yearlist">
-                <div class="plan">
+                <div class="plan bordered">
                     <img src="Assets/icon-arcade.svg" alt="icon-arcade">
                     <h5>Arcade</h5>
                     <p>$90/yr</p>
@@ -137,7 +138,7 @@
         <div class="stepthree-box">
             <h1>Pick add-ons</h1>
             <p>Add-ons help enhance your gaming experience.</p>
-            <div class="addons" style="display: none">
+            <div class="addons" style="border-color: hsl(243, 100%, 62%)">
                 <input type="checkbox" checked>
                 <div>
                     <h6>Online service</h6>
@@ -145,7 +146,7 @@
                 </div>
                 <small>+$1/mo</small>
             </div>
-            <div class="addons" style="display: none">
+            <div class="addons" style="border-color: hsl(243, 100%, 62%)">
                 <input type="checkbox" checked>
                 <div>
                     <h6>Larger storage</h6>
@@ -153,7 +154,7 @@
                 </div>
                 <small>+$2/mo</small>
             </div>
-            <div class="addons" style="display: none">
+            <div class="addons">
                 <input type="checkbox">
                 <div>
                     <h6>Customizable profit</h6>
@@ -161,7 +162,15 @@
                 </div>
                 <small>+$2/mo</small>
             </div>
-            <div class="addons">
+            <div class="foot">
+                <button id="sthgbm-btn">Go Back</button>
+                <button id="sthnm-btn">Next Step</button>
+            </div>
+        </div>
+        <div class="sthy-box" style="display: none">
+            <h1>Pick add-ons</h1>
+            <p>Add-ons help enhance your gaming experience.</p>
+            <div class="addons" style="border-color: hsl(243, 100%, 62%)">
                 <input type="checkbox" checked>
                 <div>
                     <h6>Online service</h6>
@@ -169,7 +178,7 @@
                 </div>
                 <small>+$10/yr</small>
             </div>
-            <div class="addons">
+            <div class="addons" style="border-color: hsl(243, 100%, 62%)">
                 <input type="checkbox" checked>
                 <div>
                     <h6>Larger storage</h6>
@@ -193,7 +202,7 @@
         <div class="stepfour-box">
             <h1>Finishing up</h1>
             <p>Double-check everything looks OK before confirming</p>
-            <div class="summary" style="display: none">
+            <div class="summary">
                 <div>
                     <div>
                         <h6>Arcade (Monthly)</h6>
@@ -211,10 +220,18 @@
                     <small>+$2/mo</small>
                 </div>
             </div>
-            <div class="total" style="display: none">
+            <div class="total">
                 <p>Total (per month)</p>
                 <b>$12/mo</b>
             </div>
+            <div class="foot">
+                <button id="stfgbm-btn">Go Back</button>
+                <button id="stfnm-btn">Confirm</button>
+            </div>
+        </div>
+        <div class="stfy-box" style="display: none">
+            <h1>Finishing up</h1>
+            <p>Double-check everything looks OK before confirming</p>
             <div class="summary">
                 <div>
                     <div>
@@ -237,12 +254,12 @@
                 <p>Total (per month)</p>
                 <b>$120/yr</b>
             </div>
-            <div class="stepfour-foot">
-                <a href="#goback">Go Back</a>
-                <button id="button" class="right">Confirm</button>
+            <div class="foot">
+                <button id="stfgby-btn">Go Back</button>
+                <button id="stfny-btn">Confirm</button>
             </div>
         </div>
-        <div class="sfinal">
+        <div class="finalpage">
             <img src="Assets/icon-thank-you.svg">
             <h1>Thank you!</h1>
             <p>Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.</p>

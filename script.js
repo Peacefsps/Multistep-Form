@@ -27,6 +27,7 @@ menuOne.addEventListener('click', function() {
     styBox.style.display = 'none'
     stepThreeBox.style.display = "none"
     stepFourBox.style.display = "none"
+    finalPage.style.display = 'none';
     bOne.classList.add('active')
     bTwo.classList.remove('active')
     bThree.classList.remove('active')
@@ -97,6 +98,7 @@ menuTwo.addEventListener('click', function() {
 menuThree.addEventListener('click', function() {
     mainBar.style.display = "none"
     stepTwoBox.style.display = "none"
+    sthyBox.style.display = "none"
     stepThreeBox.style.display = "block"
     stepFourBox.style.display = "none"
     bThree.classList.add('active')
@@ -108,6 +110,8 @@ menuFour.addEventListener('click', function() {
     mainBar.style.display = "none"
     stepTwoBox.style.display = "none"
     stepThreeBox.style.display = "none"
+    sthyBox.style.display = 'none'
+    finalPage.style.display = 'none';
     stepFourBox.style.display = "block"
     bFour.classList.add('active')
     bTwo.classList.remove('active')
@@ -122,6 +126,18 @@ const monthList = document.querySelector('.monthlist')
 const styBox = document.querySelector('.sty-box');
 const gbyBtn = document.querySelector('#gby-btn');
 const styBtn = document.querySelector('#sty-btn');
+const sthgbmBtn = document.querySelector('#sthgbm-btn');
+const sthnmBtn = document.querySelector('#sthnm-btn')
+const sthyBox = document.querySelector('.sthy-box')
+const sthgbyBtn = document.querySelector('#sthgby-btn')
+const sthnyBtn = document.querySelector('#sthny-btn')
+const stfgbmBtn = document.querySelector('#stfgbm-btn')
+const stfnmBtn = document.querySelector('#stfnm-btn')
+const stfyBox = document.querySelector('.stfy-box')
+const stfgbyBtn = document.querySelector('#stfgby-btn')
+const stfnyBtn = document.querySelector('#stfny-btn')
+const finalPage = document.querySelector('.finalpage')
+
 
 
 gboBtn.addEventListener('click', function() {
@@ -147,4 +163,41 @@ styBtn.addEventListener('click', function() {
     bTwo.classList.remove('active')
     bThree.classList.add('active')
 })
-
+sthgbmBtn.addEventListener('click', function() {
+    styBox.style.display = "block"
+    stepThreeBox.style.display = 'none'
+    bTwo.classList.add('active')
+    bThree.classList.remove('active')
+})
+sthnmBtn.addEventListener('click', function() {
+    sthyBox.style.display = "block"
+    stepThreeBox.style.display = 'none'
+})
+sthgbyBtn.addEventListener('click', function() {
+    sthyBox.style.display = "none"
+    stepThreeBox.style.display = 'block'
+})
+sthnyBtn.addEventListener('click', function() {
+    stepFourBox.style.display = "block"
+    sthyBox.style.display = 'none'
+    bFour.classList.add('active')
+    bThree.classList.remove('active')
+})
+stfgbmBtn.addEventListener('click', function() {
+    stepFourBox.style.display = "none"
+    sthyBox.style.display = 'block'
+    bFour.classList.remove('active')
+    bThree.classList.add('active')
+})
+stfnmBtn.addEventListener('click', function() {
+    stepFourBox.style.display = "none"
+    stfyBox.style.display = 'block'
+})
+stfgbyBtn.addEventListener('click', function() {
+    stepFourBox.style.display = "block"
+    stfyBox.style.display = 'none'
+})
+stfnyBtn.addEventListener('click', function() {
+    finalPage.style.display = 'flex';
+    stfyBox.style.display = 'none'
+})

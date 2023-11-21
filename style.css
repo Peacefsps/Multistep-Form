@@ -134,6 +134,9 @@ button {
     margin-right: 14px;
     width: 130px;
 }
+.bordered {
+    border: 1px solid hsl(243, 100%, 62%);
+}
 .plan:hover {
     border: 1px solid hsl(243, 100%, 62%);
     cursor: pointer;
@@ -200,13 +203,13 @@ button {
     justify-content: space-between;
     margin-top: 48px;
 }
-#gbo-btn, #gby-btn, #sthgby-btn {
+#gbo-btn, #gby-btn, #sthgby-btn, #sthgbm-btn, #stfgbm-btn, #stfgby-btn {
     color: hsl(231, 11%, 63%);
     border: unset;
     background-color: unset;
     font-size: 16px;
 }
-#stwobutton, #sty-btn, #sthny-btn {
+#stwobutton, #sty-btn, #sthny-btn, #sthnm-btn {
     background-color: hsl(213, 96%, 18%);
     width: 100px;
     color: white;
@@ -214,11 +217,11 @@ button {
 .stepthree-box {
     display: none;
 }
-.stepthree-box > h1 {
+.stepthree-box > h1, .sthy-box > h1 {
     color: hsl(213, 96%, 18%);
     margin-bottom: 6px;
 }
-.stepthree-box > p {
+.stepthree-box > p, .sthy-box > p {
     color: hsl(231, 11%, 63%);
     margin-bottom: 20px;
 }
@@ -230,6 +233,10 @@ button {
     margin-bottom: 12px;
     align-items: center;
     justify-content: space-between;
+}
+.addons:hover {
+    border: 1px solid hsl(243, 100%, 62%);
+    cursor: pointer;
 }
 .addons h6 {
     color: hsl(213, 96%, 18%);
@@ -247,11 +254,11 @@ button {
 .stepfour-box {
     display: none;
 }
-.stepfour-box > h1 {
+.stepfour-box > h1, .stfy-box > h1 {
     color: hsl(213, 96%, 18%);
     margin-bottom: 6px;
 }
-.stepfour-box > p {
+.stepfour-box > p, .stfy-box > p {
     color: hsl(231, 11%, 63%);
     margin-bottom: 18px;
 }
@@ -268,6 +275,9 @@ button {
 }
 .summary p, a{
     color: hsl(231, 11%, 63%);
+}
+.summary a:hover {
+    color: hsl(243, 100%, 62%);
 }
 .summary h6 {
     color: hsl(213, 96%, 18%);
@@ -297,36 +307,27 @@ hr {
     color: hsl(231, 11%, 63%);
 }
 .total > b {
-    color: hsl(213, 96%, 18%);
+    color: hsl(243, 100%, 62%);
     font-size: 18px;
 }
-.stepfour-foot {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.stepfour-foot > a {
-    text-decoration: none;
-    color: hsl(231, 11%, 63%);
-}
-.stepfour-foot > button {
+#stfnm-btn, #stfny-btn {
     background-color: hsl(243, 100%, 62%);
     width: 100px;
     color: white;
 }
-.sfinal {
+.finalpage {
     display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 250px;
 }
-.sfinal > h1 {
+.finalpage > h1 {
     color: hsl(213, 96%, 18%);
     margin-bottom: 8px;
     margin-top: 23px;
 }
-.sfinal > p {
+.finalpage > p {
     color: hsl(231, 11%, 63%);
     text-align: center;
     word-spacing: 4px;
