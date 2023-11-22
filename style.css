@@ -7,7 +7,7 @@
 }
 body {
     background-color: hsl(217, 100%, 97%);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,18 +17,18 @@ button {
 }
 .container {
     background-color: hsl(0, 0%, 100%);
-    padding: 16px 50px 16px 16px;
+    padding: 16px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     border-radius: 10px;
-    /* width: 52%; */
+    width: 750px;
 }
 .side-bar {
     background-image: url('Assets/bg-sidebar-desktop.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 20px;
+    padding: 20px 0 0 20px;
     border-radius: 10px;
     width: 274px;
     height: 450px;
