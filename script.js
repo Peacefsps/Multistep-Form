@@ -21,6 +21,57 @@ const bTwo = document.querySelector('#btwo')
 const bThree = document.querySelector('#bthree')
 const bFour = document.querySelector('#bfour')
 
+bOne.addEventListener('click', function() {
+    mainBar.style.display = "block";
+    stepTwoBox.style.display = "none";
+    styBox.style.display = "none";
+    stepThreeBox.style.display = "none";
+    sthyBox.style.display = "none";
+    stepFourBox.style.display = "none";
+    finalPage.style.display = "none";
+    bOne.classList.add("active");
+    bTwo.classList.remove("active");
+    bThree.classList.remove("active");
+    bFour.classList.remove("active");
+})
+bTwo.addEventListener('click', function() {
+    mainBar.style.display = "none";
+    stepTwoBox.style.display = "block";
+    styBox.style.display = "none";
+    sthyBox.style.display = "none";
+    finalPage.style.display = "none";
+    stepThreeBox.style.display = "none";
+    stepFourBox.style.display = "none";
+    bTwo.classList.add("active");
+    bOne.classList.remove("active");
+    bThree.classList.remove("active");
+    bFour.classList.remove("active");
+})
+bThree.addEventListener('click', function() {
+    mainBar.style.display = "none";
+    stepTwoBox.style.display = "none";
+    sthyBox.style.display = "none";
+    finalPage.style.display = "none";
+    stepThreeBox.style.display = "block";
+    stepFourBox.style.display = "none";
+    bThree.classList.add("active");
+    bOne.classList.remove("active");
+    bTwo.classList.remove("active");
+    bFour.classList.remove("active");
+})
+bFour.addEventListener('click', function() {
+    mainBar.style.display = "none";
+    stepTwoBox.style.display = "none";
+    stepThreeBox.style.display = "none";
+    sthyBox.style.display = "none";
+    finalPage.style.display = "none";
+    stepFourBox.style.display = "block";
+    bFour.classList.add("active");
+    bTwo.classList.remove("active");
+    bThree.classList.remove("active");
+    bOne.classList.remove("active");
+})
+
 menuOne.addEventListener('click', function() {
     mainBar.style.display = 'block'
     stepTwoBox.style.display = "none"
@@ -141,7 +192,6 @@ const stfyBox = document.querySelector('.stfy-box')
 const stfgbyBtn = document.querySelector('#stfgby-btn')
 const stfnyBtn = document.querySelector('#stfny-btn')
 const finalPage = document.querySelector('.finalpage')
-
 
 
 gboBtn.addEventListener('click', function() {
