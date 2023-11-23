@@ -22,7 +22,7 @@ button {
     align-items: center;
     justify-content: space-evenly;
     border-radius: 10px;
-    width: 750px;
+    /* width: 750px; */
 }
 .side-bar {
     background-image: url('Assets/bg-sidebar-desktop.svg');
