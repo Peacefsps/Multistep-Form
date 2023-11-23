@@ -26,6 +26,7 @@ menuOne.addEventListener('click', function() {
     stepTwoBox.style.display = "none"
     styBox.style.display = 'none'
     stepThreeBox.style.display = "none"
+    sthyBox.style.display = 'none'
     stepFourBox.style.display = "none"
     finalPage.style.display = 'none';
     bOne.classList.add('active')
@@ -88,6 +89,7 @@ menuTwo.addEventListener('click', function() {
     mainBar.style.display = "none"
     stepTwoBox.style.display = "block"
     styBox.style.display = 'none'
+    sthyBox.style.display = "none";
     finalPage.style.display = "none";
     stepThreeBox.style.display = "none"
     stepFourBox.style.display = "none"
